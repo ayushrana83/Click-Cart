@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import aspectratio from "@tailwindcss/aspect-ration"
+import forms from "@tailwindcss/forms"
 module.exports = {
   content: [
     "./index.html",
@@ -11,8 +13,5 @@ module.exports = {
       },
     },
   },
-  plugins: [ require('@tailwindcss/aspect-ratio'),
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/aspect-ratio'),
-  ],
+  plugins: [ aspectratio , forms]
 }
